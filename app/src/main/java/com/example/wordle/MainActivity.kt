@@ -21,11 +21,9 @@ class MainActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.textView27)
         val textViewForG2 = findViewById<TextView>(R.id.textView11)
         val textViewForG3 = findViewById<TextView>(R.id.textView14)
-        val textViewForG4 = findViewById<TextView>(R.id.textView16)
         val checkViewfor1 = findViewById<TextView>(R.id.textView10)
         val checkViewfor2 = findViewById<TextView>(R.id.textView13)
         val checkViewfor3 = findViewById<TextView>(R.id.textView15)
-        val checkViewfor4 = findViewById<TextView>(R.id.textView17)
         val Word = findViewById<TextView>(R.id.textView28)
 
         var counter: Int = 0
@@ -60,15 +58,6 @@ class MainActivity : AppCompatActivity() {
                 editText.text.clear()
                 var checkFunction = checkGuess(guess3)
                 checkViewfor3.text = checkFunction
-
-
-            }else if(counter == 4){
-
-                var guess4 = editText.text.toString()
-                textViewForG4.text = guess4
-                editText.text.clear()
-                var checkFunction = checkGuess(guess4)
-                checkViewfor4.text = checkFunction
                 Word.visibility = View.VISIBLE
             }
         }
